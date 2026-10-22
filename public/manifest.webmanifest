@@ -1,0 +1,17 @@
+{
+  "name": "Entreno escalada",
+  "short_name": "Entreno",
+  "description": "Calentamiento de clase y sesión de resistencia por libre",
+  "lang": "es",
+  "start_url": "./#/calentar",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f1f3f4",
+  "theme_color": "#f1f3f4",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

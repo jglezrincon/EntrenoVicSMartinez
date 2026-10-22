@@ -1,0 +1,217 @@
+{
+  "version": "2026-10-22",
+  "titulo": "Calentamiento y sesión por libre",
+  "calentamiento": {
+    "lugar": "Muro de densidad, a la derecha de Kilter, Moon y Tension",
+    "duracion": "20–30 min",
+    "intro": "Suave y sin prisas: es tan importante como la sesión. No escales nada hasta terminarlo. Después: **cuerda** → sala de cuerda · **bloque** → sala superior de bloque de adultos.",
+    "pasos": [
+      {
+        "id": "movilidad-articular",
+        "titulo": "Movilidad articular suave",
+        "texto": "Codos, muñecas, hombros, rodillas, tobillos, dedos…"
+      },
+      {
+        "id": "movilidad-cadera",
+        "titulo": "Movilidad de cadera",
+        "lista": [
+          "**Torsiones sentado:** piernas flexionadas y brazos estirados hacia atrás. Lleva una rodilla al centro y la otra hacia fuera, alternando.",
+          "**«Perrito meando»:** a cuatro patas, levanta una pierna atrás con la rodilla flexionada y llévala en semicírculo hacia el codo del mismo lado. Vuelve a la posición inicial."
+        ],
+        "videos": [
+          {
+            "yt": "SzEJ5ubXTQc",
+            "titulo": "Rotación de cadera sentado (90/90)",
+            "nota": "Torsiones sentado · español"
+          },
+          {
+            "yt": "oGd0a7C9Y3c",
+            "titulo": "Quadruped fire hydrants / hip circles",
+            "nota": "«Perrito meando» · inglés, se entiende sin audio"
+          }
+        ],
+        "secuencias": [
+          "torsiones-sentado",
+          "perrito-meando"
+        ]
+      },
+      {
+        "id": "manguitos",
+        "titulo": "Manguitos rotadores con banda",
+        "texto": "Los dos ejercicios que se enseñaron en clase. Abajo, la rotación externa como ejemplo. Trae tu banda si puedes; si no, habrá una allí. Si tienes dudas, pregunta al entrenador o a un compañero que los conozca bien.",
+        "videos": [
+          {
+            "yt": "FoF8QpTioDo",
+            "titulo": "Rotaciones del manguito rotador con cinta elástica para escaladores",
+            "nota": "Rotación interna y externa · español"
+          }
+        ],
+        "secuencias": [
+          "rotacion-externa"
+        ]
+      },
+      {
+        "id": "densidad-15",
+        "titulo": "15 movimientos en densidad",
+        "texto": "1 movimiento = mover una mano. Mueve los pies al menos cada 2 movimientos de manos.",
+        "claves": [
+          "Movimientos suaves",
+          "Pies silenciosos",
+          "Caderas bajas",
+          "Brazos estirados"
+        ],
+        "videos": [
+          {
+            "yt": "xN3e2e5elak",
+            "titulo": "Quiet feet: climbing footwork",
+            "nota": "Pies silenciosos · inglés"
+          }
+        ],
+        "descanso": 120
+      },
+      {
+        "id": "densidad-25",
+        "titulo": "25 movimientos en densidad",
+        "texto": "Mismas pautas, añadiendo recursos técnicos: banderas, cambios de pies, rodillas, talones…",
+        "videos": [
+          {
+            "yt": "nOkv9uFHojU",
+            "titulo": "Flagging",
+            "nota": "Banderas · inglés"
+          },
+          {
+            "yt": "QqDebkWHaWc",
+            "titulo": "How to perform a drop knee",
+            "nota": "Rodilla · inglés"
+          },
+          {
+            "yt": "nynCBEd3YTk",
+            "titulo": "Learn how to heel hook",
+            "nota": "Talón · inglés"
+          }
+        ],
+        "descanso": 120,
+        "secuencias": [
+          "recursos-tecnicos"
+        ]
+      },
+      {
+        "id": "campus",
+        "titulo": "Campus · 2 repeticiones",
+        "texto": "Sube con una mano, listón a listón, hasta el más lejano que alcances **sin forzar**. Baja igual y repite con la otra mano.",
+        "claves": [
+          "Pies altos (penúltimo o antepenúltimo listón)",
+          "Caderas bajas",
+          "Brazos estirados"
+        ],
+        "videos": [
+          {
+            "yt": "i1ExPQy-7lg",
+            "titulo": "Campus boarding for beginners",
+            "nota": "Referencia general del campus · inglés"
+          }
+        ],
+        "secuencias": [
+          "campus"
+        ]
+      },
+      {
+        "id": "multipresa",
+        "titulo": "Activación de dedos en multipresa",
+        "texto": "Se explica en clase.",
+        "videos": [
+          {
+            "yt": "ilZLzI9imTc",
+            "titulo": "Warming up for climbing with a fingerboard",
+            "nota": "Solo como referencia · inglés"
+          }
+        ]
+      },
+      {
+        "id": "vias-bloques",
+        "titulo": "2 vías o bloques de dificultad media",
+        "modo": {
+          "cuerda": "Dos vías con autoseguro, más o menos 1,5–2 grados por debajo de tu máximo de ese día. Que salgan, pero con algo de esfuerzo. Si notas congestión en el antebrazo o dolor en los dedos, bájate. 2 min de descanso entre vías.",
+          "bloque": "Dos bloques de 1–2 colores por debajo de tu máximo actual. 2 min de descanso entre bloques."
+        },
+        "nota": "Caída en los primeros movimientos → repite. Caída de la mitad hacia arriba → no repitas.",
+        "descanso": 120
+      }
+    ]
+  },
+  "libre": {
+    "objetivo": "Ganar resistencia, que es lo que ahora frena para subir de nivel. El grado es subjetivo y, de momento, el objetivo es otro.",
+    "pasos": [
+      {
+        "id": "libre-calentamiento",
+        "titulo": "Calentamiento de clase",
+        "texto": "El mismo, completo.",
+        "ir": "calentar"
+      },
+      {
+        "id": "libre-test",
+        "titulo": "Test de resistencia",
+        "texto": "En el muro de densidad, pon el cronómetro y escala libre y suave: pies silenciosos, brazos estirados, **respira** y busca reposos. Mide cuánto aguantas sin bajarte.",
+        "aviso": "No llegues al fallo. Dolor o mucha congestión en los antebrazos → bájate.",
+        "widget": "test"
+      },
+      {
+        "id": "libre-series",
+        "titulo": "Series de resistencia · 2 a 3",
+        "texto": "Escala tu tiempo de referencia y descansa lo mismo. Si no recuperas bien, añade 2 min de descanso. Con las semanas el tiempo irá subiendo, hasta un máximo de 10 min por serie.",
+        "aviso": "Dolor o mucha congestión → bájate. Nunca al fallo.",
+        "widget": "series"
+      },
+      {
+        "id": "libre-calma",
+        "titulo": "Vuelta a la calma y técnica",
+        "texto": "Descansa 10 min. Si hay tiempo, 2–3 vías muy fáciles con autoseguro, muy despacio y con pies silenciosos. Practica banderas, talones, rodillas y reposos sin manos si los encuentras. 2 min de descanso entre vías.",
+        "descanso": 600,
+        "descanso2": 120
+      },
+      {
+        "id": "libre-estiramientos",
+        "titulo": "Estiramientos en casa",
+        "texto": "Entre 30 min y 1 h 30 min después de acabar. Mantén cada estiramiento al menos 30 s, sin forzar.",
+        "videos": [
+          {
+            "yt": "H0LNSvY1vdM",
+            "titulo": "Guía de estiramientos: muñecas y antebrazos",
+            "nota": "español"
+          },
+          {
+            "yt": "4W-xie4ZOfs",
+            "titulo": "Rutina de estiramientos de hombro y brazos",
+            "nota": "español"
+          }
+        ]
+      }
+    ]
+  },
+  "pautas": [
+    {
+      "titulo": "Dónde quedamos",
+      "texto": "En el muro de densidad, a la derecha de Kilter, Moon y Tension, donde a veces hacemos travesías por colores y hay varias tablas multipresa."
+    },
+    {
+      "titulo": "Después del calentamiento",
+      "texto": "Cuerda → sala de cuerda. Bloque → sala superior de bloque de adultos. Si llegas tarde, busca allí al grupo."
+    },
+    {
+      "titulo": "Puntualidad",
+      "texto": "Puedes empezar a calentar antes, pero la clase comienza a la hora establecida."
+    },
+    {
+      "titulo": "Calentar primero",
+      "texto": "No empieces a escalar antes de completar el calentamiento; si no, pierde su sentido. Hazlo suave y sin prisas."
+    },
+    {
+      "titulo": "Menos charla al calentar",
+      "texto": "El rocódromo también es social, pero el tiempo que se pierde hablando sale de tu entrenamiento. Tenlo en cuenta al valorar tus resultados."
+    },
+    {
+      "titulo": "Sesión por libre",
+      "texto": "El objetivo es ganar resistencia. El grado es subjetivo y, de momento, no es el objetivo."
+    }
+  ]
+}
