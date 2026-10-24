@@ -1,7 +1,7 @@
 // Service worker: la app queda guardada en el móvil para usarla sin conexión en el rocódromo.
 // El entreno (data/) se pide primero a la red para recibir versiones nuevas y,
 // si no hay conexión, sale de la copia guardada.
-const APP_VERSION = '1';
+const APP_VERSION = '2';
 const SHELL = 'entreno-app-' + APP_VERSION;
 const DATA = 'entreno-datos';
 const SHELL_FILES = [
@@ -17,6 +17,7 @@ const SHELL_FILES = [
 ];
 
 self.addEventListener('install', (event) => {
+  self.skipWaiting(); // la versión nueva entra ya, sin esperar
   event.waitUntil((async () => {
     const shell = await caches.open(SHELL);
     await shell.addAll(SHELL_FILES);

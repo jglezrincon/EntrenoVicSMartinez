@@ -28,6 +28,21 @@
   <a href="#/pautas" data-tab="pautas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16H6z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg><span>Pautas</span></a>
 </nav>
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script>
+/* Reinicio de emergencia: borra la app guardada (no tu registro) y vuelve a cargar. */
+window.__reiniciarApp = function () {
+  var listo = function () { location.replace(location.pathname + '?r=' + Date.now()); };
+  var p = [];
+  try { if (navigator.serviceWorker) p.push(navigator.serviceWorker.getRegistrations().then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); })); } catch (e) {}
+  try { if (window.caches) p.push(caches.keys().then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); })); } catch (e) {}
+  Promise.all(p).then(listo, listo);
+};
+setTimeout(function () {
+  if (window.__entrenoListo) return;
+  var m = document.getElementById('main');
+  m.innerHTML = '<p class="cargando">Está tardando demasiado.</p><p><button class="btn" type="button" onclick="__reiniciarApp()">Reiniciar app</button></p>';
+}, 12000);
+</script>
 <script src="figuras.js"></script>
 <script src="app.js"></script>
 </body>

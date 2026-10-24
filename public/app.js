@@ -82,7 +82,11 @@ document.addEventListener('visibilitychange', () => {
 /* ---------- Datos ---------- */
 let C = null;
 async function cargarDatos() {
-  const r = await fetch('data/entreno.json', { cache: 'no-cache' });
+  const ctl = 'AbortController' in window ? new AbortController() : null;
+  const t = setTimeout(() => ctl && ctl.abort(), 10000);
+  let r;
+  try { r = await fetch('data/entreno.json', { cache: 'no-cache', signal: ctl ? ctl.signal : undefined }); }
+  finally { clearTimeout(t); }
   if (!r.ok) throw new Error('sin datos');
   C = await r.json();
 }
@@ -333,9 +337,20 @@ function ir() {
 }
 
 /* ---------- Arranque ---------- */
+function fallo(texto, e) {
+  window.__entrenoListo = true;
+  $('#main').innerHTML = `<p class="cargando">${esc(texto)}</p>`
+    + (e ? `<p class="nota">Detalle: ${esc(e && (e.message || e))}</p>` : '')
+    + '<p><button class="btn" type="button" id="reintentar">Reiniciar app</button></p>';
+  $('#reintentar').onclick = () => window.__reiniciarApp();
+}
 async function iniciar() {
   try { await cargarDatos(); }
-  catch (e) { $('#main').innerHTML = '<p class="cargando">No se ha podido cargar el entreno. Abre la app una vez con conexión.</p>'; return; }
+  catch (e) { fallo('No se ha podido cargar el entreno. Comprueba la conexión y pulsa «Reiniciar app».', e); return; }
+  try { pintarApp(); window.__entrenoListo = true; }
+  catch (e) { fallo('Algo ha fallado al abrir el entreno.', e); }
+}
+function pintarApp() {
   const cal = C.calentamiento, lib = C.libre;
   $('#main').innerHTML =
     seccionPasos('calentar', cal, ['📍 ' + cal.lugar, '⏱ ' + cal.duracion], cal.intro) +
@@ -356,7 +371,7 @@ async function iniciar() {
   window.addEventListener('hashchange', ir);
   ir();
 }
-iniciar();
+iniciar().catch((e) => fallo('Algo ha fallado al abrir el entreno.', e));
 
 /* ---------- Funciona sin conexión ---------- */
 if ('serviceWorker' in navigator) {
